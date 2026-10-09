@@ -1,0 +1,110 @@
+[
+  {
+    "insight_id": "INS-0001",
+    "type": "trend",
+    "indicator": "anc_coverage",
+    "entity": "Ahmedabad",
+    "period": "2026-08",
+    "value": 69,
+    "prev_value": 85,
+    "change_pct": -18.82,
+    "severity": "High",
+    "explanation": "ANC COVERAGE in Ahmedabad dropped by 18.8% from 85 in 2026-07 to 69 in 2026-08, exceeding the 10.0% significant-change threshold."
+  },
+  {
+    "insight_id": "INS-0002",
+    "type": "trend",
+    "indicator": "high_risk_cases",
+    "entity": "Ahmedabad",
+    "period": "2026-08",
+    "value": 13,
+    "prev_value": 10,
+    "change_pct": 30.0,
+    "severity": "High",
+    "explanation": "HIGH RISK CASES in Ahmedabad increased by 30.0% from 10 in 2026-07 to 13 in 2026-08, exceeding the 10.0% significant-change threshold."
+  },
+  {
+    "insight_id": "INS-0004",
+    "type": "trend",
+    "indicator": "anc_coverage",
+    "entity": "Mehsana",
+    "period": "2026-08",
+    "value": 42,
+    "prev_value": 84,
+    "change_pct": -50.0,
+    "severity": "High",
+    "explanation": "ANC COVERAGE in Mehsana dropped by 50.0% from 84 in 2026-07 to 42 in 2026-08, exceeding the 10.0% significant-change threshold."
+  },
+  {
+    "insight_id": "INS-0005",
+    "type": "trend",
+    "indicator": "high_risk_cases",
+    "entity": "Mehsana",
+    "period": "2026-08",
+    "value": 28,
+    "prev_value": 11,
+    "change_pct": 154.55,
+    "severity": "High",
+    "explanation": "HIGH RISK CASES in Mehsana increased by 154.6% from 11 in 2026-07 to 28 in 2026-08, exceeding the 10.0% significant-change threshold."
+  },
+  {
+    "insight_id": "INS-0008",
+    "type": "outlier",
+    "indicator": "anc_coverage",
+    "entity": "Mehsana",
+    "period": "2026-08",
+    "value": 42,
+    "prev_value": 78.3,
+    "change_pct": -46.4,
+    "severity": "High",
+    "explanation": "Mehsana's ANC COVERAGE of 42 in 2026-08 is 2.8 sigma below the state mean (78.3), flagging as a statistical IQR outlier for review."
+  },
+  {
+    "insight_id": "INS-0010",
+    "type": "outlier",
+    "indicator": "high_risk_cases",
+    "entity": "Mehsana",
+    "period": "2026-08",
+    "value": 28,
+    "prev_value": 13.4,
+    "change_pct": 108.7,
+    "severity": "High",
+    "explanation": "Mehsana's HIGH RISK CASES of 28 in 2026-08 is 2.6 sigma above the state mean (13.4), flagging as a statistical IQR outlier for review."
+  },
+  {
+    "insight_id": "INS-0011",
+    "type": "correlation",
+    "indicator": "institutional_delivery:immunization",
+    "entity": "State-wide",
+    "period": "2026-07..08",
+    "value": "r=0.98",
+    "prev_value": "n/a",
+    "change_pct": "n/a",
+    "severity": "High",
+    "explanation": "Strong direct (positive) correlation (r=0.98) observed between INSTITUTIONAL DELIVERY and IMMUNIZATION across districts (|r| >= 0.70)."
+  },
+  {
+    "insight_id": "INS-0012",
+    "type": "correlation",
+    "indicator": "anc_coverage:high_risk_cases",
+    "entity": "State-wide",
+    "period": "2026-07..08",
+    "value": "r=-0.93",
+    "prev_value": "n/a",
+    "change_pct": "n/a",
+    "severity": "High",
+    "explanation": "Strong inverse (negative) correlation (r=-0.93) observed between ANC COVERAGE and HIGH RISK CASES across districts (|r| >= 0.70)."
+  },
+  {
+    "insight_id": "INS-0013",
+    "type": "threshold_breach",
+    "indicator": "anc_coverage:high_risk_cases",
+    "entity": "Mehsana",
+    "period": "2026-08",
+    "value": "ANC:42, HRC:28",
+    "prev_value": "ANC:84, HRC:11",
+    "change_pct": "ANC:-50.0%, HRC:+154.55%",
+    "severity": "High",
+    "explanation": "Critical Correlated Anomaly in Mehsana: ANC coverage plummeted by 50.0% while High-Risk Cases surged by +154.6% (11 -> 28)."
+  }
+]

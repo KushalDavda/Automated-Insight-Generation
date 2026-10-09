@@ -1,0 +1,14 @@
+insight_id,type,indicator,entity,period,value,prev_value,change_pct,severity,explanation
+INS-0001,trend,anc_coverage,Ahmedabad,2026-08,69,85,-18.82,High,"ANC COVERAGE in Ahmedabad dropped by 18.8% from 85 in 2026-07 to 69 in 2026-08, exceeding the 10.0% significant-change threshold."
+INS-0002,trend,high_risk_cases,Ahmedabad,2026-08,13,10,30.0,High,"HIGH RISK CASES in Ahmedabad increased by 30.0% from 10 in 2026-07 to 13 in 2026-08, exceeding the 10.0% significant-change threshold."
+INS-0003,trend,high_risk_cases,Bhavnagar,2026-08,15,17,-11.76,Low,"HIGH RISK CASES in Bhavnagar dropped by 11.8% from 17 in 2026-07 to 15 in 2026-08, exceeding the 10.0% significant-change threshold."
+INS-0004,trend,anc_coverage,Mehsana,2026-08,42,84,-50.0,High,"ANC COVERAGE in Mehsana dropped by 50.0% from 84 in 2026-07 to 42 in 2026-08, exceeding the 10.0% significant-change threshold."
+INS-0005,trend,high_risk_cases,Mehsana,2026-08,28,11,154.55,High,"HIGH RISK CASES in Mehsana increased by 154.6% from 11 in 2026-07 to 28 in 2026-08, exceeding the 10.0% significant-change threshold."
+INS-0006,trend,high_risk_cases,Vadodara,2026-08,6,7,-14.29,Medium,"HIGH RISK CASES in Vadodara dropped by 14.3% from 7 in 2026-07 to 6 in 2026-08, exceeding the 10.0% significant-change threshold."
+INS-0007,outlier,anc_coverage,Ahmedabad,2026-08,69,78.3,-11.9,Low,"Ahmedabad's ANC COVERAGE of 69 in 2026-08 is 0.7 sigma below the state mean (78.3), flagging as a statistical IQR outlier for review."
+INS-0008,outlier,anc_coverage,Mehsana,2026-08,42,78.3,-46.4,High,"Mehsana's ANC COVERAGE of 42 in 2026-08 is 2.8 sigma below the state mean (78.3), flagging as a statistical IQR outlier for review."
+INS-0009,outlier,immunization,Vadodara,2026-08,97,91.6,5.9,Medium,"Vadodara's IMMUNIZATION of 97 in 2026-08 is 1.9 sigma above the state mean (91.6), flagging as a statistical IQR outlier for review."
+INS-0010,outlier,high_risk_cases,Mehsana,2026-08,28,13.4,108.7,High,"Mehsana's HIGH RISK CASES of 28 in 2026-08 is 2.6 sigma above the state mean (13.4), flagging as a statistical IQR outlier for review."
+INS-0011,correlation,institutional_delivery:immunization,State-wide,2026-07..08,r=0.98,n/a,n/a,High,Strong direct (positive) correlation (r=0.98) observed between INSTITUTIONAL DELIVERY and IMMUNIZATION across districts (|r| >= 0.70).
+INS-0012,correlation,anc_coverage:high_risk_cases,State-wide,2026-07..08,r=-0.93,n/a,n/a,High,Strong inverse (negative) correlation (r=-0.93) observed between ANC COVERAGE and HIGH RISK CASES across districts (|r| >= 0.70).
+INS-0013,threshold_breach,anc_coverage:high_risk_cases,Mehsana,2026-08,"ANC:42, HRC:28","ANC:84, HRC:11","ANC:-50.0%, HRC:+154.55%",High,Critical Correlated Anomaly in Mehsana: ANC coverage plummeted by 50.0% while High-Risk Cases surged by +154.6% (11 -> 28).
